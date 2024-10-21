@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Régal Tunisien</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-container">
+        <right><a href="commandes.php">Mes commandes</a></right>
+        <h1>Le Régal Tunisien</h1>
+        <center><img src="logo.jpeg" height="150" width="150"/></center>
+        <form action="cart.php" method="POST">
+            <div class="menu-item">
+                <h2>Plat 1</h2>
+                <p>Coucous à l'agneau et aux carottes</p>
+                <p><img src="couscous.jpg" height="150" width="150"/></p>
+                <p><b>Prix : </b>20 DT</p>
+                <div class="actions">
+                    <input type="hidden" name="n1" value="Coucous à l'agneau">
+                    <input type="hidden" name="p1" value="20">
+                    <p><b>Quantité : </b><input type="number" min="0" value="0" class="quantity" name="q1"></p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <h2>Plat 2</h2>
+                <p>Couscous au Dorade</p>
+                <p><img src="couscous-poisson.jpg" height="150" width="150"/></p>
+                <p><b>Prix : </b>20 DT</p>
+                <div class="actions">
+                        <input type="hidden" name="n2" value="Coucous au Dorade">
+                        <input type="hidden" name="p2" value="20">
+                        <p><b>Quantité : </b><input type="number" min="0" value="0" class="quantity" name="q2"></p>
+                    </div>
+            </div>
+            <div class="menu-item">
+                <h2>Plat 3</h2>
+                <p>Spaghettis aux fruits de mer</p>
+                <p><img src="spaghettis.jpg" height="150" width="150"/></p>
+                <p><b>Prix : </b>25 DT</p>
+                <div class="actions">
+                        <input type="hidden" name="n3" value="Spaghettis aux fruits de mer">
+                        <input type="hidden" name="p3" value="25">
+                        <p><b>Quantité : </b><input type="number" min="0" value="0" class="quantity" name="q3"></p>
+                    </div>
+            </div>
+            <button class="add-to-cart">Ajouter au panier</button>
+        </form>
+    </div>
+</body>
+</html>
